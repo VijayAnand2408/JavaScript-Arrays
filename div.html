@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Calculator|Addition
+        </title>
+        <link rel="stylesheet" href="common.css">
+    </head>
+    <body id="divi">
+        <nav>
+        <ul class="Navi" id="drop">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="add.html">Addition</a></li>
+            <li><a href="sub.html">Subtraction</a></li>
+            <li><a href="mul.html">Multiplication</a></li>
+            <li><a href="per.html">Percantage</a></li>
+            <li><a href="he.html">Height</a></li>
+            <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+
+        </ul>
+
+    </nav>
+    
+    
+    
+     <script>
+        function dropdownMenu() {
+            var x = document.getElementById("drop");
+            if (x.className === "Navi") {
+                x.className += " resp";
+            } else {
+                x.className = "Navi";
+            }
+        }
+    </script>
+
+   
+   
+   <form id="pro">
+      <div class="bod">
+       <h1 style="text-align: center">Enter the values(Divide)</h1><br><br>
+       <h3 style="text-align: center" class="HE3">Enter the Dividend:</h3>
+       <input type="number" id="f1" class="in" placeholder="Dividend">
+        <h3 style="text-align: center" class="HE3">Enter the Divisor:</h3>
+         <input type="number" id="f2"  class="in" placeholder="Divisor"><br><br>
+         <input type="submit" class="Sub">
+ <div class="result" >
+        <h3 id="res">Result:</h3>
+ </div>
+ </div>
+  </form>
+<script type="text/javascript" src="common.js"></script>  
+    </body>
+</html>
